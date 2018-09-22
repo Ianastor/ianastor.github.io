@@ -1,76 +1,54 @@
-/* Main Button Area css
+/* Finance Area css
 ============================================================================================ */
-.mission_area{
-	overflow: hidden;
-	.left_img{
-		overflow: hidden;
-	}
-	.col-lg-6{
-		vertical-align: middle;
-		align-self: center;
-	}
+.finance_area{
+	background: #f9f9ff;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
-.mission_slider{
-	max-width: 400px;
-	margin-left: 130px;
-	.owl-prev{
-		margin-top: -20px;
-	}
-	.owl-next{
-		margin-top: 20px;
-	}
-	.owl-prev, .owl-next{
-		position: absolute;
-		right: -200px;
-		top: 50%;
-		transform: translateY(-50%);
-		font-size: 40px;
-		color: #e6e6e6;
-		@include transition;
-		cursor: pointer;
-		&:hover{
-			color: $dip;
+.finance_inner{
+	
+}
+.finance_item{
+	.media{
+		.d-flex{
+			vertical-align: middle;
+			align-self: center;
+			padding-right: 25px;
+			i{
+				font-size: 36px;
+				color: $baseColor;
+			}
+		}
+		.media-body{
+			h5{
+				color: $dip;
+				font-size: 18px;
+				line-height: 27px;
+				margin-bottom: 0px;
+			}
 		}
 	}
 }
-.mission_text{
-	text-align: center;
-	margin-bottom: 70px;
-	max-width: 400px;
-	h4{
-		color: $dip;
-		text-transform: uppercase;
-		margin-bottom: 20px;
-		font-size: 24px;
-	}
-	p{
-		margin-bottom: 0px;
-	}
-	&:last-child{
-		margin-bottom: 0px;
-	}
-}
+/* End Finance Area css
+============================================================================================ */
 
-.success_area{
-	overflow: hidden;
-	.success_img{
-		overflow: hidden;
-	}
-	.col-lg-6{
-		vertical-align: middle;
-		align-self: center;
-	}
-	.mission_text{
-		float: right;
-		margin-right: 130px;
-	}
-	.right_dir{
-		.mission_text{
-			float: none;
-			margin-left: 130px;
+/* Looking Area css
+============================================================================================ */
+.impress_area{
+	background: url(../img/notify-bg.jpg) no-repeat scroll center center;
+	background-size: cover;
+	.impress_inner{
+		color: #fff;
+		h2{
+			text-transform: uppercase;
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+		p{
+			max-width: 770px;
+			margin: 0px auto 45px;
 		}
 	}
 }
-
-/* End Main Button Area css
+/* End Looking Area css
 ============================================================================================ */

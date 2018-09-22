@@ -1,78 +1,86 @@
 /* Team Area css
 ============================================================================================ */
 .team_area{
-	
+	background: #f9f9ff;
 }
-.team_slider{
-	
+.team_inner{
+	margin-bottom: -30px;
 }
 .team_item{
 	position: relative;
-	&:before{
-		content: "";
-		background: url(../img/team/team-overlay.png) no-repeat;
-		background-size: cover;
-		position: absolute;
-		top: 0px;
-		left: 0px;
-		height: 100%;
-		width: 100%;
-	}
-	.hover_text{
-		position: absolute;
-		left: 0px;
-		bottom: 50px;
-		width: 100%;
-		text-align: center;
-		@include transition;
-		h4{
-			font-size: 24px;
-			color: $dip;
-			text-transform: uppercase;
-			@include transition;
+	text-align: center;
+	margin-bottom: 30px;
+	.team_img{
+		position: relative;
+		img{
+			width: 100%;
 		}
-		p{
-			color: $dip;
-			margin-bottom: 0px;
-			@include transition;
-		}
-		.list{
-			margin-top: 0px;
-			height: 0px;
-			overflow: hidden;
-			@include transition;
+		&:before{
+			content: "";
+			background: rgba(255, 255, 255, .65);
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			height: 100%;
+			width: 100%;
 			opacity: 0;
-			li{
-				display: inline-block;
-				margin-right: 4px;
-				a{
-					display: inline-block;
-					width: 30px;
-					height: 30px;
-					background: #e9ebee;
-					text-align: center;
-					color: $dip;
-					line-height: 30px;
-				}
+			transition: all 300ms ease;
+			border-radius: 50%;
+		}
+		.hover{
+			position: absolute;
+			left: 0px;
+			width: 100%;
+			top: 50%;
+			transform: translateY(-50%);
+			text-align: center;
+			opacity: 0;
+			@include transition;
+			a{
+				font-size: 14px;
+				color: $pfont;
+				margin-right: 20px;
+				@include transition;
 				&:last-child{
 					margin-right: 0px;
 				}
 				&:hover{
-					a{
-						background: $baseColor;
-						color: #fff;
-					}
+					color: $baseColor;
 				}
 			}
 		}
 	}
-	&:hover{
-		.list{
-			height: 30px;
-			overflow: visible;
-			opacity: 1;
-			margin-top: 25px;
+	.team_name{
+		text-align: center;
+		margin-top: 30px;
+		h4{
+			margin-bottom: 5px;
+			color: $dip;
+			font-family: $play;
+			font-weight: bold;
+			font-size: 18px;
 			@include transition;
+		}
+		p{
+			font-size: 14px;
+			font-family: $rob;
+			color: $pfont;
+			margin-bottom: 0px;
+		}
+	}
+	&:hover{
+		.team_img{
+			&:before{
+				opacity: 1;
+			}
+			.hover{
+				opacity: 1;
+			}
+		}
+		.team_name{
+			h4{
+				color: $baseColor;
+			}
 		}
 	}
 }
