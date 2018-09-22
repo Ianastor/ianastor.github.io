@@ -1,47 +1,48 @@
 /* Main Button Area css
 ============================================================================================ */
 .main_btn{
-	display: inline-block;
-	background: $baseColor;
 	padding: 0px 40px;
-	color: #fff;
-	font-family: $rob;
-	font-size: 13px;
-	font-weight: 500;
-	line-height: 48px;
-	border-radius: 0px;
-	outline: none !important;
-	box-shadow: none !important;
-	text-align: center;
+   	background: $baseColor;
+    z-index: 2;
+    display: inline-block;
+    transition: all 400ms linear;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+	font-weight: 600;
+    font-family: $ral;
+    line-height: 48px;
 	border: 1px solid $baseColor;
-	cursor: pointer;
-	border-radius: 5px;
+    border-radius: 5px;
 	@include transition;
-	&:hover{
+    &:hover{
+        color: $baseColor;
+		box-shadow: none;
 		background: transparent;
-		color: $baseColor;
-	}
+    }
 }
 .main_btn2{
 	display: inline-block;
-	background: #fff;
-	padding: 0px 32px;
+	background: #f9f9ff;
+	padding: 0px 45px;
 	color: $dip;
-	font-family: $rob;
-	font-size: 14px;
-	font-weight: 500;
+	font-family: $ral;
+	font-size: 13px;
+	font-weight: 600;
 	line-height: 48px;
 	border-radius: 5px;
 	outline: none !important;
 	box-shadow: none !important;
 	text-align: center;
-	border: 1px solid #fff;
+	border: 1px solid #dddddd;
 	cursor: pointer;
-	@include transition;
+	transition: color 0ms linear;
 	&:hover{
-		background: $baseColor;
+		background-image: -moz-linear-gradient( 0deg, rgb(188,43,255) 0%, rgb(114,73,251) 100%);
+		background-image: -webkit-linear-gradient( 0deg, rgb(188,43,255) 0%, rgb(114,73,251) 100%);
+		background-image: -ms-linear-gradient( 0deg, rgb(188,43,255) 0%, rgb(114,73,251) 100%);
+		box-shadow: 0px 10px 30px 0px rgba(115, 73, 251, 0.3);
 		color: #fff;
-		border-color: $baseColor;
 	}
 }
 .submit_btn{
@@ -50,7 +51,7 @@
 	background: $baseColor;
 	padding: 0px 50px;
 	color: #fff;
-	font-family: $rob;
+	font-family: $ral;
 	font-size: 13px;
 	font-weight: 500;
 	line-height: 50px;
@@ -58,51 +59,106 @@
 	outline: none !important;
 	box-shadow: none !important;
 	text-align: center;
-	border: 1px solid $baseColor;
 	cursor: pointer;
 	@include transition;
 	&:hover{
-		background: transparent;
-		color: $baseColor;
+        color: #fff;
 	}
 }
 
-.white_bg_btn{
+.white_btn{
 	display: inline-block;
 	background: #f9f9ff;
-	padding: 0px 35px;
+	padding: 0px 32px;
 	color: $dip;
-	font-family: $rob;
-	font-size: 13px;
-	font-weight: 500;
-	line-height: 34px;
-	border-radius: 0px;
+	font-family: $ral;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 50px;
+	border-radius: 5px;
 	outline: none !important;
 	box-shadow: none !important;
 	text-align: center;
-	border: 1px solid #eeeeee;
 	cursor: pointer;
 	@include transition;
+	box-shadow: -14.142px 14.142px 20px 0px rgba(0, 0, 0, 0.1);
 	&:hover{
-		background: $baseColor;
+		color: $dip;
+		box-shadow: none;
+	}
+}
+.banner_btn{
+	padding: 0px 38px;
+	line-height: 48px;
+	background: $baseColor;
+	color: #fff; 
+	display: inline-block;
+	border: 1px solid $baseColor;
+	border-radius: 5px;
+	font-size: 14px;
+	font-family: $ral;
+	font-weight: 600;
+	@include transition;
+	&:hover{
+		color: $baseColor;
+		background: transparent;
+	}
+}
+.banner_btn2{
+	padding: 0px 36px;
+	line-height: 48px;
+	background: #f9f9ff;
+	color: $dip; 
+	display: inline-block;
+	border: 1px solid #eeeeee;
+	border-radius: 5px;
+	font-size: 14px;
+	font-family: $ral;
+	font-weight: 600;
+	@include transition;
+	&:hover{
 		color: #fff;
+		background: $baseColor;
 		border-color: $baseColor;
 	}
 }
-.black_btn{
-	padding: 0px 44px;
-	line-height: 50px;
-	background: $dip;
-	color: $baseColor;
+
+/* Main Blog Banner Button Area css
+============================================================================================ */
+.white_bg_btn{
+	background: #fff;
 	display: inline-block;
-	border-radius: 5px;
-	font-size: 13px;
-	font-family: $rob;
-	font-weight: 500;
+	color: $dip;
+	line-height: 40px;
+	padding: 0px 28px;
+	font-size: 14px;
+	font-family: $ral;
+	font-weight: 600;
+	text-transform: uppercase;
 	@include transition;
+	border: none;
 	&:hover{
 		background: $baseColor;
-		color: $dip;
+		color: #fff;
+	}
+}
+/* End Main Blog Banner Button Area css
+============================================================================================ */
+.blog_btn{
+	border: 1px solid #eeeeee;
+	background: #f9f9ff;
+	padding: 0px 32px;
+	font-size: 13px;
+	font-weight: 500;
+	font-family: $ral;
+	border-radius: 5px;
+	color: $dip;
+	line-height: 34px;
+	display: inline-block;
+	&:hover{
+		background: $baseColor;
+		border-color: $baseColor;
+		color: #fff;
 	}
 }
 /* End Main Button Area css

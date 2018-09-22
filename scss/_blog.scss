@@ -1,46 +1,150 @@
-/* Latest Blog Area css
+/* Home Blog Area css
 ============================================================================================ */
-.latest_blog_area{
-	
+.home_blog_area{
+	.col-lg-3{
+		vertical-align: middle;
+		align-self: center;
+	}
 }
-.latest_blog_inner{
-	margin-bottom: -30px;
+.h_blog_img{
+	img{
+		width: 100%;
+	}
 }
-.l_blog_item{
-	margin-bottom: 30px;
-	.date{
+.h_blog_text{
+	padding: 0px 65px;
+	.cat{
 		font-size: 13px;
-		font-family: $rob;
-		font-weight: normal;
-		color: $pfont;
-		margin-top: 20px;
+		font-weight: 300;
+		font-family: $ral;
+		color: $dip;
+		margin-bottom: 8px;
 		display: block;
-		margin-bottom: 15px;
 	}
 	h4{
-		font-size: 18px;
-		line-height: 24px;
+		text-transform: uppercase;
 		color: $dip;
-		border-bottom: 1px solid #eeeeee;
-		padding-bottom: 20px;
-		margin-bottom: 20px;
-		@include transition;
+		font-size: 24px;
+		margin-bottom: 15px;
 	}
 	p{
 		margin-bottom: 0px;
 	}
-	&:hover{
-		h4{
-			color: $baseColor;
+}
+/* End Home Blog Area css
+============================================================================================ */
+
+
+
+
+///// main code start
+
+
+
+/* Causes Area css
+============================================================================================ */
+.causes_area{
+}
+.causes_slider{
+	.owl-dots{
+		text-align: center;
+		margin-top: 80px;
+		.owl-dot{
+			height: 14px;
+			width: 14px;
+			background: #eeeeee;
+			display: inline-block;
+			margin-right: 7px;
+			&:last-child{
+				margin-right: 0px;
+			}
+			&.active{
+				background: $baseColor;
+			}
 		}
 	}
 }
-/* End Latest Blog Area css
+.causes_item{
+	background: #fff;
+	.causes_img{
+		position: relative;
+		.c_parcent{
+			position: absolute;
+			bottom: 0px;
+			width: 100%;
+			left: 0px;
+			height: 3px;
+			background: rgba(255, 255, 255, .5);
+			span{
+				width: 70%;
+				height: 3px;
+				background: $baseColor;
+				position: absolute;
+				left: 0px;
+				bottom: 0px;
+				&:before{
+					content: "75%";
+					position: absolute;
+					right: -10px;
+					bottom: 0px;
+					background: $baseColor; 
+					color: #fff;
+					padding: 0px 5px;
+				}
+			}
+		}
+	}
+	.causes_text{
+		padding: 30px 35px 40px 30px;
+		h4{
+			color: $dip;
+			font-family: $ral;
+			font-size: 18px;
+			font-weight: 600;
+			margin-bottom: 15px;
+			cursor: pointer;
+			&:hover{
+				color: $baseColor;
+			}
+		}
+		p{
+			font-size: 14px;
+			line-height: 24px;
+			color: $pfont;
+			font-weight: 300;
+			margin-bottom: 0px;
+		}
+	}
+	.causes_bottom{
+		a{
+			width: 50%;
+			border: 1px solid $baseColor;
+			text-align: center;
+			float: left;
+			line-height: 50px;
+			background: $baseColor;
+			color: #fff;
+			font-family: $ral;
+			font-size: 14px;
+			font-weight: 500;
+			& + a{
+				border-color: #eeeeee;
+				background: #fff;
+				font-size: 14px;
+				color: $dip;
+			}
+		}
+	}
+}
+/* End Causes Area css
 ============================================================================================ */
 
 
 
 /*================= latest_blog_area css =============*/
+.latest_blog_area{
+    background: #f9f9ff;
+}
 .single-recent-blog-post{
     margin-bottom: 30px;
     .thumb{
@@ -146,7 +250,7 @@
     }
     &:hover{
         .categories_details{
-            background: rgba(77, 191, 28 , 0.85);
+            background: rgba(167, 203, 0, .85)
         }
     }
 }
@@ -167,7 +271,7 @@
     .post_tag{
         padding-bottom: 20px;
         a{
-            font: 300 14px/21px $rob;
+            font: 300 14px/21px $ral;
             color: $dip;
             &:hover{
                 color: $pfont;
@@ -180,7 +284,7 @@
     .blog_meta{
         li{
             a{
-                font: 300 14px/20px $rob;
+                font: 300 14px/20px $ral;
                 color: #777777;
                 vertical-align: middle;
                 padding-bottom: 12px;
@@ -256,7 +360,7 @@
                 padding-left: 20px;
                 border-radius: 45px;
                 z-index: 0;
-                background: $baseColor;
+				background: $baseColor;
                 @include placeholder{
                     color: #fff;
                 }
@@ -423,7 +527,7 @@
                     color: $dip;
                     font-size: 12px;
                     &:hover{
-                        background: $baseColor;
+						background: $baseColor;
                         color: #fff;
                     }
                 }
@@ -752,3 +856,6 @@
 
 
 /*============ End Blog Single Styles  =============*/
+
+
+

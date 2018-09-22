@@ -1,57 +1,9 @@
 /* Home Banner Area css
 ============================================================================================ */
-.home_banner_area{
-	position: relative;
-	z-index: 1;
-	min-height: 780px;
-	.banner_inner{
-		position: relative;
-		overflow: hidden;
-		width: 100%;
-		min-height: 780px;
-		.overlay{
-			background: url(../img/banner/home-banner.jpg) no-repeat scroll center center;
-			position: absolute;
-			left: 0;
-			right: 0;
-			top: 0;
-			height: 121%;
-			bottom: 0;
-			z-index: -1;
-		}
-		.banner_content{
-			color: #fff;
-			h5{
-				text-transform: uppercase;
-				font-family: $rob;
-				font-size: 14px;
-				font-weight: normal;
-				margin-bottom: 15px;
-			}
-			h3{
-				font-size: 42px;
-				font-family: $play;
-				font-weight: 900;
-				margin-bottom: 20px;
-			}
-			p{
-				font-size: 14px;
-				line-height: 24px;
-				font-family: $rob;
-				font-weight: normal;
-				max-width: 620px;
-				margin: auto;
-			}
-			.main_btn{
-				margin-top: 40px;
-			}
-		}
-	}	
-	
-}
+
 
 .blog_banner{
-	min-height: 660px;
+	min-height: 780px;
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
@@ -61,7 +13,7 @@
 		position: relative; 
 		overflow: hidden;
 		width: 100%;
-		min-height: 660px;
+		min-height: 780px;
 		z-index: 1;
 		.overlay{
 			background: url(../img/banner/banner-2.jpg) no-repeat scroll center center;
@@ -77,10 +29,11 @@
 			max-width: 700px;
 			margin: auto;
 			color: #fff;
+			margin-top: 40px;
 			h2{
 				font-size: 60px;
-				font-weight: bold;
-				font-family: $play;
+				font-weight: 500;
+				font-family: $ral;
 				line-height: 66px;
 				margin-bottom: 15px;
 			}
@@ -103,43 +56,64 @@
 .banner_area{
 	position: relative;
 	z-index: 1;
-	min-height: 300px;
+	background: url(../img/banner/banner.jpg) no-repeat scroll center center;
+	background-size: cover;
 	.banner_inner{
 		position: relative;
 		overflow: hidden;
 		width: 100%;
-		min-height: 300px;
-		background: #04091e;
 		z-index: 1;
-		.overlay{
-			background: url(../img/banner/banner.jpg) no-repeat scroll center center;
-			position: absolute;
-			left: 0;
-			right: 0;
-			top: 0;
-			height: 125%;
-			bottom: 0;
-			z-index: -1;
-			opacity: .6;
-		}
+		padding-top: 80px;
+		padding-bottom: 80px;
+//		.overlay{
+//			background: url(../img/banner/banner.jpg) no-repeat scroll center center;
+//			position: absolute;
+//			left: 0;
+//			right: 0;
+//			top: 0;
+//			height: 125%;
+//			bottom: 0;
+//			z-index: -1;
+//			opacity: .5;
+//		}
 		.banner_content{
+			max-width: 655px;
+			background: #fff;
+			padding: 50px 65px;
+			position: relative;
+			border-radius: 5px;
+			&:before{
+				content: "";
+				width: 313px;
+				height: 216px;
+				background: rgba(167, 203, 0, .80);
+				position: absolute;
+				left: -50px;
+				top: -30px;
+				z-index: -1;
+			}
 			h2{
-				color: #fff;
-				font-size: 48px;
-				font-family: $play;
+				color: $dip;
+				font-size: 36px;
 				margin-bottom: 0px;
-				font-weight: bold;
+				display: inline-block;
+				text-transform: uppercase;
 			}
 			.page_link{
+				display: inline-block;
+				float: right;
+				padding-top: 10px;
 				a{
 					font-size: 14px;
-					color: #fff;
-					font-family: $rob;
+					color: $pfont;
+					font-family: $ral;
 					margin-right: 32px;
+					font-weight: 300;
 					position: relative;
+					text-transform: uppercase;
 					&:before{
-						content: "\e87a";
-						font-family: 'Linearicons-Free';
+						content: "\f0da";
+						font: normal normal normal 14px/1 FontAwesome;
 						position: absolute;
 						right: -25px;
 						top: 50%;
@@ -150,9 +124,6 @@
 						&:before{
 							display: none;
 						}	
-					}
-					&:hover{
-						color: $baseColor;
 					}
 				}
 			}
